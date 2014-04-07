@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Bitcoin Price</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+      body {
+        min-width: 300px;
+        overflow-x: hidden;
+      }
+    </style>
+    <script src="js/popup.js"></script>
+  </head>
+  <body>
+  <label for="btcAddr">Bitcoin address:</label>
+  <input id="btcAddr" class="form-control" />
+  <div id="warning" class='alert alert-danger'>It's not a valid bitcoin address!</div>
+  <table id="detailTable" class="table table-hover table-condensed">
+    <tr><td>No. Transactions</td><td id="n_tx">waiting</td></tr>
+    <tr><td>Total Received</td><td id="total_received">waiting</td></tr>
+    <tr><td>Total Send</td><td id="total_sent">waiting</td></tr>
+    <tr><td>Final Balance</td><td id="final_balance">waiting</td></tr>
+  </table>
+  </body>
+</html>
+
