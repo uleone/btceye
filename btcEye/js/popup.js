@@ -20,7 +20,6 @@ function fetchAddrInfo(addr){
   	xhr.onreadystatechange = function() {
 	    if (xhr.readyState == 4) {
 	      var resp = JSON.parse(xhr.responseText);
-	      //var price=resp.ticker?parseFloat(resp.ticker.last):parseFloat(resp.last);
 	      $("#n_tx").html(resp.n_tx);
 	      $("#total_received").html(resp.total_received/100000000+" BTC");
 	      $("#total_sent").html(resp.total_sent/100000000+" BTC");

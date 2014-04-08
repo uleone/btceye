@@ -1,18 +1,15 @@
 $(function(){
 	$("body").on('mouseup', infoPopup);
 	$("body").on('mousedown', function(e){
-		console.log("mousedown");
 		$("#btceye-pop").remove();
 	});
 });
 
 function infoPopup(e){
-	console.log("in popup");
     var selection = window.getSelection();
     var addr = selection && (selection.toString() || '').trim();
     var addrReg=/\b[13][1-9A-HJ-NP-Za-km-z]{26,33}\b/g;
 	if (addrReg.test(addr)) {
-		console.log(addr+" is valid");
 		var _width = 250;
 		$("body").after('<div id="btceye-pop" style="position:absolute;width:'+_width+'px; line-height:1.5em;z-index:100; color:black; font-size:12px;">'+
 							'<div id="btceye-pop-texture" style="height:15px;background-color:#a1a1a1;border:1px solid #a1a1a1;  border-radius:2px 2px 0 0;box-shadow: 0 1px 2px rgba(0, 0, 0, .4);">'+
