@@ -19,10 +19,11 @@ function infoPopup(e){
 							'<div id="btceye-pop-content" style="padding:5px 10px 10px 10px; border-radius:0 0 3px 3px; border:1px solid #ddd; border-top:none; background:white; box-shadow: 0 1px 2px rgba(0, 0, 0, .3); color:black;">Searching...</div>'+
 							'</div>');
 		var tableStr='<table id="detailTable" style="width:100%; border:0px; color:black; font-size:12px; text-align:left; font-weight:normal;">'+
-		    '<tr><td style="border:0px; border-top: 1px solid #ddd;">No. Transactions</td><td id="n_tx" style="border:0px; border-top: 1px solid #ddd;">waiting</td></tr>'+
-		    '<tr><td style="border:0px; border-top: 1px solid #ddd;">Total Received</td><td id="total_received" style="border:0px; border-top: 1px solid #ddd;">waiting</td></tr>'+
-		    '<tr><td style="border:0px; border-top: 1px solid #ddd;">Total Send</td><td id="total_sent" style="border:0px; border-top: 1px solid #ddd;">waiting</td></tr>'+
-		    '<tr><td style="border:0px; border-top: 1px solid #ddd;">Final Balance</td><td id="final_balance" style="border:0px; border-top: 1px solid #ddd;">waiting</td></tr>'+
+		    '<tr><td style="border:0px; border-top: 1px solid #ddd;">总交易数</td><td id="n_tx" style="border:0px; border-top: 1px solid #ddd;">waiting</td></tr>'+
+		    '<tr><td style="border:0px; border-top: 1px solid #ddd;">收款总额</td><td id="total_received" style="border:0px; border-top: 1px solid #ddd;">waiting</td></tr>'+
+		    '<tr><td style="border:0px; border-top: 1px solid #ddd;">发款总额</td><td id="total_sent" style="border:0px; border-top: 1px solid #ddd;">waiting</td></tr>'+
+		    '<tr><td style="border:0px; border-top: 1px solid #ddd;">余额</td><td id="final_balance" style="border:0px; border-top: 1px solid #ddd;">waiting</td></tr>'+
+		    '<tr><td></td><td><a id="moreLink" style="float:right" href="https://blockchain.info/address/'+addr+'" target="_blank">详细..</a></td></tr>'+
 		  '</table>';
 		$("#btceye-pop-content").html(tableStr);
 	  	$("#btceye-pop-close").click(function(){
